@@ -1,0 +1,1889 @@
+/* 返回头加公共的 CSS, 去控制显示和隐藏 */
+.btnback-common-gm,
+#btnback-common-gm{
+  display: none;
+}
+
+.page-appopen .btnback-common-gm,
+.page-showback .btnback-common-gm,
+.page-appopen #btnback-common-gm,
+.page-showback #btnback-common-gm{
+  display: block;
+}
+
+/* 倒霉险 */
+.pop-daomeixian-gm{
+  width:5.4rem;
+  background: #ffffff; 
+  border-radius: 0.15rem; 
+  overflow: hidden;
+  margin:0 auto;
+  padding-bottom: 0.3rem;
+  display: none;
+}
+.pop-daomeixian-gm .head-gm{
+  font-size: 0.28rem; 
+  color: #fff; 
+  text-align:center; 
+  height: 0.7rem; 
+  line-height: 0.7rem;
+  background: #fd6363;
+  position: relative;
+}
+.pop-daomeixian-gm .head-gm .close-game-gm{
+  width:0.4rem;
+  height:0.4rem; 
+  background:url(../../../images/game/common/daomeixian/close.png) no-repeat; 
+  position:absolute;
+  top:0.15rem;
+  right:0.2rem; 
+  background-size:0.4rem 0.4rem;
+  cursor:pointer;
+}
+.pop-daomeixian-gm .center-game-gm .img-dm-gm{
+  width:3.07rem; 
+  height:2.71rem; 
+  background:url(../../../images/game/common/daomeixian/douge.png) no-repeat; 
+  margin:0 auto; 
+  background-size:3.07rem 2.71rem;
+  display: block;
+  margin-top: 0.4rem;
+  cursor:pointer;
+} 
+.pop-daomeixian-gm .center-game-gm .content-gm{
+  font-size: 0.2rem; 
+  color: #666666; 
+  line-height: 0.4rem; 
+  margin: 0.3rem 0.65rem; 
+  font-weight: bold;
+}
+.pop-daomeixian-gm .center-game-gm .content-gm .reward-gm{
+  margin-left: 0.08rem;
+  margin-right: 0.08rem;
+}
+.pop-daomeixian-gm .center-game-gm .content-gm .color-gm{
+  color: #ff6600;
+}
+.pop-daomeixian-gm .foot-gm .dm-gm{
+  width:2.3rem;
+  height:0.7rem;
+  font-size: 0.24rem; 
+  text-align: center; 
+  line-height: 0.7rem; 
+  color: #fff; 
+  background: #fd6363; 
+  border-radius: 0.1rem; 
+  margin: 0 auto; 
+  display: block; 
+  font-weight: bold;
+  cursor:pointer;
+}
+
+/*救济金*/
+.pop-jiujijin-gm{
+  width:5.42rem;
+  background:#fff;
+  margin:20px auto;
+  border-radius:0.12rem;
+  display:none;
+}
+.pop-jiujijin-gm .head-gm{
+  font-size:0.28rem;
+  background:#fd6363;
+  height:0.7rem;
+  line-height:0.7rem;
+  position:relative;
+  color:#fff;
+  font-weight:bold; 
+  text-align:center;
+  border-radius:0.12rem 0.12rem 0 0 ;
+}
+.pop-jiujijin-gm .head-gm .close-game-gm{
+  width:0.4rem;
+  height:0.4rem;
+  color:#fff;
+  position:absolute;
+  top:0.15rem;right:0.15rem;
+  cursor:pointer;
+  background:url(../../../images/game/common/daomeixian/close.png) no-repeat ;
+  background-size:0.4rem 0.4rem;      
+}               
+.pop-jiujijin-gm .center-game-gm .img-dm-gm {
+  width:3.07rem;
+  height:2.79rem;
+  display:block; 
+  margin:0 auto;
+  margin-top:0.4rem;
+  background:url(../../../images/game/common/daomeixian/douge2.png) no-repeat;
+  background-size:3.07rem 2.79rem;
+}
+.pop-jiujijin-gm .center-game-gm .content-gm{
+  font-size:0.2rem;
+  color:#5c5c5c;
+  font-weight:bold;
+  margin:0.3rem 0 0.2rem;
+  line-height:0.4rem;
+  text-align: center;
+}
+.pop-jiujijin-gm .center-game-gm .color-gm{
+  color:#ff6600;
+  font-weight:bold;
+}
+.pop-jiujijin-gm .center-game-gm .color-gm .reward-gm{
+  margin-left: 0.08rem;
+  margin-right: 0.08rem;
+}
+.pop-jiujijin-gm .foot-gm {
+  padding-bottom: 0.3rem;
+}
+.pop-jiujijin-gm .foot-gm .dm-gm{
+  width: 2.30rem;
+  height:0.7rem;
+  line-height:0.7rem;
+  text-align: center;
+  color: #fff;
+  background: #fd6363;
+  border-radius: 0.12rem; 
+  margin: 0 auto ;display:
+  block;font-size:0.22rem; 
+  font-weight:bolder;
+}
+
+/* 防沉迷 开始 */
+.pop-addict-gm {
+  font-size: 12px; /* 防止里面的元素的 display: inline-block;造成的有的手机 多余的空白 */
+  width: 5.86rem;
+  color: #333;
+  display: none;
+}
+
+/* 页面宽度是 750下的样式 */
+.page-viewport-width-750 .pop-addict-gm{
+  width: 6.8rem;
+}
+
+/* 弹窗 icon */
+.pop-addict-gm .icon-addict-gm {
+  background: url(../../../images/game/common/icon-addict-gm.png) no-repeat;
+  display: inline-block;
+  font-size: 0;
+  background-size: 0.44rem 0.44rem;
+}
+
+.pop-addict-gm .icon-addict1-gm{
+  width: 0.46rem;
+  height: 0.46rem;
+}
+
+.pop-addict-gm .p-box-gm{
+  background-color: #FFF;
+  background-clip: padding-box;
+  border-radius: 0.14rem;
+  overflow: hidden;
+}
+
+.pop-addict-gm .box-close-gm{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.13rem;
+  cursor: pointer;
+}
+
+.pop-addict-gm .box-close-gm .close-gm{
+  display: block;
+}
+
+/* 头部 */
+.pop-addict-gm .p-top-gm{
+  padding-top: 0.40rem;
+}
+
+.pop-addict-gm .p-top-gm h3{
+  padding: 0;
+  margin: 0;
+  font-size: 0.36rem;
+  line-height: 0.38rem;
+  text-align: center;
+  color: #fd4646;
+  font-weight: bold;
+}
+
+/* 娱乐险中部 */
+.pop-addict-gm .p-main-gm{
+  margin-top: 0.24px;
+  margin-bottom: 0.30rem;
+  font-family: 'Microsoft YaHei';
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm .detail-gm{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm p{
+  margin-top: 0.10rem;
+  margin-bottom: 0.10rem;
+  line-height: normal;
+  font-size: 0.23rem;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm .time-gm{
+  color: #fd6363;
+  margin-left: 0.04rem;
+  margin-right: 0.04rem;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm .tel-gm{
+  color: #F60;
+  margin-left: 0.06rem;
+
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm .p1-gm{
+  line-height: 0.44rem;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm .p2-gm{
+  margin-top: 0.22rem;
+}
+
+.pop-addict-gm .p-main-gm .tbl-gm .font1-gm{
+  color: #555;
+  font-size: 0.20rem;
+}
+
+/* 弹窗底部 */
+.pop-addict-gm .p-bt-gm{
+  padding-top: 0.13rem;
+  padding-bottom: 0.13rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.pop-addict-gm .btn-it-gm,
+.pop-addict-gm .btn-space-gm{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pop-addict-gm .btn-space-gm{
+  width: 0.54rem;
+  height: 1px;
+}
+
+.pop-addict-gm .btn-it-gm{
+  font-size: 0.23rem;
+  font-weight: bold;
+  padding: 0.19rem 0.06rem;
+  border-radius: 0.10rem;
+  min-width: 2.02rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.pop-addict-gm .btn-it-gm.btn-it1-gm{
+  background-color: #fd7070;
+}
+
+.pop-addict-gm .btn-it-gm.btn-it2-gm{
+  background-color: #ffa44d;
+}
+
+.pop-addict-gm .btn-certify-gm,
+.pop-addict-gm .btn-space-gm{
+  display: none;
+}
+
+/* 弹窗1 */
+.pop-addict-gm.pop-addict-1-gm .p-main-gm .tbl-gm .detail-gm{
+  max-width: 85%;
+}
+
+/* android app 打开才有"前往实名认证"的按钮  */
+.page-appopen .pop-addict-gm .btn-certify-gm,
+.page-appopen .pop-addict-gm .btn-space-gm{
+  display: inline-block;
+}
+/* 防沉迷 结束*/
+
+/* 公告 开始, 默认的属性为 hidden */
+.btn-pop-notice-gm{
+	visibility: hidden;
+}
+
+.btn-pop-notice-gm i{
+	position: absolute;
+	width: 0.12rem;
+	height: 0.12rem;
+	background-color: #F00;
+	border: 0.02rem solid #FFF;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	background-clip: padding-box;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* 加 html 的属性怕覆盖不了线上的 */
+html.page-show-btn-pop-notice-gm .btn-pop-notice-gm{
+  visibility: visible;
+}
+
+/* 带 none-block-gm, 则自动隐藏 */
+.btn-pop-notice-gm.none-block-gm{
+  display: none;
+}
+
+/* 显示出来的block */
+html.page-show-btn-pop-notice-gm .btn-pop-notice-gm.none-block-gm{
+  display: block;
+}
+
+.pop-notice-gm {
+	font-size: 12px;
+	width: 5.40rem;
+	color: #000;
+	display: none;
+}
+
+/* 弹窗 icon */
+.pop-notice-gm .icon-notice-gm {
+	background: url(../../../images/game/common/icon-notice.png) no-repeat;
+	display: inline-block;
+	font-size: 0;
+	background-size: 1.00rem 2.50rem;
+}
+
+.pop-notice-gm .icon-notice1-gm,
+.pop-notice-gm .icon-notice2-gm{
+	width: 0.42rem;
+	height: 0.43rem;
+}
+
+.pop-notice-gm .icon-notice2-gm{
+	background-position: 0 -0.49rem;
+}
+
+.pop-notice-gm .icon-notice3-gm,
+.pop-notice-gm .icon-notice4-gm{
+	width: 0.38rem;
+	height: 0.39rem;
+}
+
+.pop-notice-gm .icon-notice3-gm{
+	background-position: 0 -0.99rem;
+}
+
+.pop-notice-gm .icon-notice4-gm{
+	background-position: 0 -1.49rem;
+}
+
+.pop-notice-gm .box-gm{
+	border-radius: 0.10rem;
+	overflow: hidden;
+}
+
+/* 公告头部 */
+.pop-notice-gm .p-top-gm{
+	padding-top: 0.20rem;
+	padding-bottom: 0.20rem;
+	/*position: relative;*/
+	background-color: #fd6363;
+}
+
+.pop-notice-gm .p-top-gm .p-close-gm{
+	position: absolute;
+	right: 0.21rem;
+	top: 0.15rem;
+	cursor: pointer;
+}
+
+.pop-notice-gm .p-top-gm h3{
+	padding: 0;
+	margin: 0;
+	font-size: 0.30rem;
+	line-height: 0.30rem;
+	text-align: center;
+	color: #FFF;
+}
+
+/* 公告中部 */
+.pop-notice-gm .p-main-gm{
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #EEE;
+	max-height: 3rem;
+	/*max-height: 4.9rem;*/
+	overflow-y: auto;
+}
+
+.pop-notice-gm .p-main-gm .load-cnt-gm{
+	display: none;
+	color: #666;
+}
+
+.pop-notice-gm .p-main-gm .load-cnt-gm.loading-cnt-gm,
+.pop-notice-gm .p-main-gm .load-cnt-gm.loadfail-cnt-gm,
+.pop-notice-gm .p-main-gm .load-cnt-gm.loadtip-cnt-gm{
+	margin-top: 1.00rem;
+	margin-bottom: 1.00rem;
+	text-align: center;
+	font-size: 0.30rem;
+}
+
+.pop-notice-gm .p-main-gm .load-cnt-gm .retry-gm{
+	color: #F00;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.pop-notice-gm .p-main-gm.loading-gm .loading-cnt-gm,
+.pop-notice-gm .p-main-gm.loaded-gm .loaded-cnt-gm,
+.pop-notice-gm .p-main-gm.loadtip-gm .loadtip-cnt-gm,
+.pop-notice-gm .p-main-gm.loadfail-gm .loadfail-cnt-gm{
+	display: block;
+}
+
+.pop-notice-gm .p-main-gm .sec-gm{
+	margin-top: 0.09rem;
+	margin-bottom: 0.09rem;
+	border-bottom: 1px solid #adadad;
+}
+
+/* 内容 标题 */
+.pop-notice-gm .p-main-gm .sec-title-gm{
+	padding-top: 0.20rem;
+	padding-bottom: 0.20rem;
+	padding-left: 0.30rem;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+.pop-notice-gm .p-main-gm .sec-title-gm .horn-gm,
+.pop-notice-gm .p-main-gm .sec-title-gm .text-gm,
+.pop-notice-gm .p-main-gm .sec-title-gm .arrow-gm{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pop-notice-gm .p-main-gm .sec-title-gm .text-gm{
+	font-size: 0.28rem;
+	font-weight: bold;
+	margin-left: 0.12rem;
+	width: 3.93rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #333;
+  line-height: normal;
+}
+
+/* 内容 文本 */
+.pop-notice-gm .p-main-gm .sec-cnt-gm{
+	background-color: #fffee7;
+	padding-left: 0.27rem;
+	padding-right: 0.27rem;
+	padding-top: 0.10rem;
+	padding-bottom: 0.10rem;
+	display: none;
+}
+
+.pop-notice-gm .p-main-gm .sec-cnt-gm ul,
+.pop-notice-gm .p-main-gm .sec-cnt-gm li{
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+}
+.pop-notice-gm .p-main-gm .sec-cnt-gm li{
+	font-size: 0.22rem;
+	color: #666;
+	line-height: 0.36rem;
+	margin-top: 0.10rem;
+	margin-bottom: 0.10rem;
+  list-style-type:none;
+}
+
+/* 内容 展开 */
+.pop-notice-gm .p-main-gm .sec-gm.spread-gm .sec-cnt-gm{
+	display: block;
+}
+
+.pop-notice-gm .p-main-gm .sec-gm.spread-gm .sec-title-gm .arrow-gm{
+	background-position: 0 -1.50rem;
+}
+
+/* 内容 按钮 */
+.pop-notice-gm .p-main-gm .sec-cnt-gm .go-wrap-gm{
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	text-align: center;
+}
+
+.pop-notice-gm .p-main-gm .sec-cnt-gm .go-gm{
+	padding: 0.21rem 0.64rem;
+	font-size: 0.28rem;
+	line-height: 0.28rem;
+	color: #ffaf04;
+	border: 2px solid #ffaf04;
+	border-radius: 0.40rem;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* 弹窗底部 */
+.pop-notice-gm .p-bt-gm{
+	padding-top: 0.30rem;
+	padding-bottom: 0.30rem;
+	text-align: center;
+	background-color: #FFF;
+}
+
+.pop-notice-gm .play-game-gm{
+	display: inline-block;
+	vertical-align: top;
+	background-color: #fd6363;
+	font-size: 0.24rem;
+	font-weight: bold;
+	color: #FFF;
+	padding-top: 0.24rem;
+	padding-bottom: 0.24rem;
+	padding-left: 0.67rem;
+	padding-right: 0.67rem;
+	border-radius: 0.10rem;
+	cursor: pointer;
+}
+
+/* 750 宽度下的样式 */
+.page-viewport-width-750 .pop-notice-gm{
+	width: 6.32rem;
+}
+
+.page-viewport-width-750 .pop-notice-gm .p-main-gm .sec-title-gm .text-gm{
+	width: 4.85rem;
+}
+
+/* 公告 结束 */
+
+/* 余额提示 开始 */
+.pop-balance-gm{
+  font-size: 0.28rem;
+  width: 5.4rem;
+  color: #333;
+  margin: 0 auto;
+  font-family: 'Microsoft YaHei';
+  display: none;
+}
+.pop-balance-gm .bl-icons-gm{
+  background:url(../../../images/game/common/balance_icons.png);
+  background-size:0.46rem  2.5rem;
+   
+}
+.pop-balance-gm .box-gm{
+  position: relative;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border-radius: 0.14rem;
+  overflow: hidden;
+}
+.pop-balance-gm .top-gm{
+  position: relative;
+  height: 0.7rem;
+  text-align: center;
+  line-height: 0.7rem;
+  font-size: 0.32rem;
+  color: #fff;
+  background: #fd6363;
+}
+.pop-balance-gm .top-gm h3{
+  font-size: 0.32rem;
+}
+
+.pop-balance-gm .box-close-gm{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.14rem;
+  cursor: pointer;
+}
+.pop-balance-gm .close-gm{
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  
+}
+.pop-balance-gm .bl-icons1-gm{
+  background-position: 0 0;
+}
+.pop-balance-gm .main-gm{
+  font-family: 'Microsoft YaHei';
+  background: #fff;
+  
+}
+.pop-balance-gm .main-gm-title{
+  font-family: 'Microsoft YaHei';
+  background: #fff;
+  color: #ff0307;
+  font-size:0.18rem;
+  line-height: 0.32rem;
+  text-align: center;
+  padding-bottom: 0.3rem;
+}
+.pop-balance-gm .tbl-gm{
+  margin-left: auto;
+  margin-right: auto;
+}
+.pop-balance-gm .tbl-gm li{
+  line-height: 0.4rem;
+  font-size: 0;
+  margin-bottom: 0.4rem;
+}
+
+.pop-balance-gm .icons-left-gm,
+.pop-balance-gm .text-center-gm,
+.pop-balance-gm .text-right-gm{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pop-balance-gm .icons-left-gm{
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right: 0.14rem;
+}
+.pop-balance-gm .text-center-gm{
+  min-width: 1.86rem;
+  font-size: 0.28rem;
+  margin-right: 0.05rem;
+}
+.pop-balance-gm .text-right-gm{
+  color: #ff6600;
+  font-size: 0.28rem;
+  max-width:2.2rem;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'arial';
+}
+.pop-balance-gm  .bl-icons2-gm{
+  background-position: 0 -2.1rem;
+}
+.pop-balance-gm  .bl-icons3-gm{
+  background-position: 0 -0.49rem;
+}
+.pop-balance-gm  .bl-icons4-gm{
+  background-position: 0 -0.91rem;
+}
+.pop-balance-gm  .bl-icons5-gm{
+  background-position: 0 -1.31rem;
+}
+.pop-balance-gm  .bl-icons6-gm{
+  background-position: 0 -1.69rem;
+}
+.pop-balance-gm .pop-btn-gm{
+  width: 2.30rem;
+  height: 0.70rem;
+  line-height: 0.7rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.24rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fd6363;
+  border-radius:0.06rem;
+  margin-bottom: 0.24rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.pop-balance-gm .loading-main-gm{
+  height: 3.2rem;
+  text-align: center;
+  line-height: 3.2rem;
+}
+.pop-balance-gm .loaded-main-gm{
+  display: none;
+  margin: 0.2rem 0.3rem 0.06rem;
+}
+
+/* 750 宽度下的样式 */
+.page-viewport-width-750 .pop-balance-gm {
+  width: 6.32rem;
+}
+/* 余额提示 结束 */
+/* 余额提示 结束 */
+
+/* 设置游戏赢得奖励类型弹框  start */
+#J_set-score-gm{
+  display: none;
+}
+html.page-show-setbutton-gm #J_set-score-gm{
+  display: inline-block;
+}
+html.page-show-setbutton-gm #J_set-score-gm.none-block-gm{
+  display: block;
+}
+#J_set-score-gm .arrow-gm{
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUNDMkQ3MTUyNDRGMTFFNThFRTE4NkJBQjMxOTEyRTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUNDMkQ3MTYyNDRGMTFFNThFRTE4NkJBQjMxOTEyRTgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxQ0MyRDcxMzI0NEYxMUU1OEVFMTg2QkFCMzE5MTJFOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxQ0MyRDcxNDI0NEYxMUU1OEVFMTg2QkFCMzE5MTJFOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pnq/NosAAAC9SURBVHjanFLBDYQwDAPegBiAcRADsEmH690Dlc/dDiDGgAFyOGmhV7WfWjKKnLhUTksiKnJQRTR1UV88LLXV/oE/WvYXZ0pjtjM87xsNt/edaJqI2laIGprAhEbF8rYRdZ3IPqGhJ1C+UbOE00OTI3qCt288WMLVUsa6dsYTnqrIhDN++DsM6clxdNXXX4eEs67pcNCLhAMud7IIommEqJ9El9ge+3uXcZjUA/Cv/bLpnbZW4VyZ+8h/AgwA5lSTkqMPstQAAAAASUVORK5CYII=);
+  background-size: 0.14rem 0.14rem;
+  position: absolute;
+  width: 0.14rem;
+  height: 0.14rem;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  display: none;
+}
+/*气泡在 左边 中间  右边*/
+.set-tips-left-gm .settip-gm{
+  top: 0.6rem;
+  left: 0;
+}
+.set-tips-center-gm .settip-gm{
+  top: 0.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.set-tips-right-gm .settip-gm{
+  top: 0.6rem;
+  right: 0;
+}
+.set-tips-left-gm .settip-gm:before{
+  left: 0.14rem;
+}
+.set-tips-center-gm .settip-gm:before{
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.set-tips-right-gm .settip-gm:before{
+  right: 0.14rem;
+}
+.set-tips-leftside-gm .settip-gm{
+  top: 0rem;
+  right: 0.64rem;
+}
+.set-tips-rightside-gm .settip-gm{
+  top: 0rem;
+  left: 0.58rem;
+}
+.set-tips-leftside-gm .settip-gm:before,
+.set-tips-rightside-gm .settip-gm:before{
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-top: 0.11rem solid transparent;
+  border-bottom: 0.11rem solid transparent;
+}
+.set-tips-leftside-gm .settip-gm:before{
+  right: -0.18rem;
+  border-left: 0.15rem solid rgba(255,255,255,0.9);
+  border-right: none;
+}
+.set-tips-rightside-gm .settip-gm:before{
+  left: -0.14rem;
+  border-left: none;
+  border-right: 0.15rem solid rgba(255,255,255,0.9); 
+}
+html.page-show-settips-gm #J_set-score-gm .arrow-gm{
+  display: block;
+}
+.J_setTips-gm{
+  display: none;
+ }
+html.page-show-settips-gm .J_setTips-gm{
+  display: block;
+}
+/* 设置弹层 */
+.pop-set-gm {
+  font-size: 0.12rem;
+  width: 96%;
+  color: #000;
+  display: none;
+}
+
+.pop-set-gm .box-gm{
+  background-color: #fff;
+  border-radius: 0.12rem;
+}
+.pop-set-gm .p-top-gm{
+  padding-top: 0.12rem;
+  padding-bottom: 0.12rem;
+  position: relative;
+}
+.pop-set-gm .p-top-gm .p-close-gm{
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  cursor: pointer;
+  font-family: 'Simsun';
+  text-align: center;
+  width: 0.62rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  color: #FFF;
+  background-color: #c9c9c9;
+  border-radius: 0.6rem;
+  font-size: 0.5rem;
+}
+.pop-set-gm .p-top-gm h3{
+  padding: 0;
+  margin: 0;
+  font-size: 0.18rem;
+  margin-left: 0.20rem;
+  text-align: left;
+  color: #FFF;
+  font-family: 'Microsoft Yahei';
+  font-weight: normal;
+}
+.pop-set-gm .p-main-gm {
+  overflow-y: auto;
+  font-size: 0.14rem;
+  line-height: 0.36rem;
+}
+.pop-set-gm .p-title-gm{
+  font-size: 0.34rem;
+  line-height: 0.46rem;
+  font-weight: bolder;
+  padding: 0 0.7rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+  padding-right: 0.8rem;
+}
+.pop-set-gm .p-main-gm table{
+    text-align: left;
+    max-width:75%;
+    font-family: "Microsoft yahei";
+    margin: 0.50rem auto;
+    color: #999;
+    font-size: 0.24rem;
+}
+.pop-set-gm .p-main-gm table td{
+    line-height: 0.40rem;
+}
+.pop-set-gm .p-main-gm table td h2{
+    font-size: 0.3rem;
+    color: #333;
+    font-weight: bolder;
+}
+.pop-set-gm .p-main-gm table .text-right-gm{
+    width: 0.5rem;
+}
+.pop-set-gm .p-main-gm table .icon-wrong-gm,
+.pop-set-gm .p-main-gm table .icon-right-gm{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.30rem;
+}
+.pop-set-gm .p-main-gm table .icon-wrong-gm{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAMAAABE+WOeAAAAA3NCSVQICAjb4U/gAAAAQlBMVEX////5aQD5aQD5aQD5aQD5aQD5aQD5aQD5aQD5aQD5aQD////+7eD+2sD8vpD8tID7oWD7mFD7j0D6hTD6fCD5aQBWP5aXAAAAFnRSTlMAESJEZoiZu8zd7v//////////////XvjjOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMS8xMy8xM9vHCu8AAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAABI0lEQVRIia2W2xKDIAxEqSII1Npb/v9XC51eaNjVYab7ZjxogCXBGKXBOh+lKHpnB/1ayXr5lbcb9BSkVZgIPSL6OWKEH6+INetePbe/OMz1F1PWtQ7Mhy285dUAhQP+d4DCES8znirlv5Me9RvMy3tZ23XHfCDZMP6VEdhWwj9/YNu4HDN/A/FiPu3IoiXzICw++x3FGS8DTIfz1rgu3sH0ZU3pCHlvIuEXyEcDw5SX//CXTv6a0qmTXwkP14fyEa//jfEe768w3mH/CLS/FP9Af8qyIPsXf+IJEHlyvpgsOb9EgdWHc67PgJ9Y/cHnJdD6hvlP22gygnzVNHR9RnxVn5v6D+a73TAa7TSkPRxvw0ewBXf2X9Pb34v67g9FO/eTB2jJiHvbdQCaAAAAAElFTkSuQmCC);
+    background-size: 0.47rem 0.47rem;
+    width: 0.47rem;
+    height: 0.47rem;
+}
+.pop-set-gm .p-main-gm table .icon-right-gm{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA51JREFUeNrMmW1IU2EUx8+u07TMhS+x3hZbRpANBqNCejGoSWIGKX20j5OFgSAE9kEiog+SECxG2pfAj0oRBUKjsJAkyJIskBAFSZFWgpZJ861z7s5dc97d3b3cu/3h/2H37nme3733uec5z7kG6DoHKciKrkJXou1oMx+TNImeRY+ih9Cv+VhSMiQBW4h2oxvRjiTGHEH3oLvRvxNpKCTw3xy0Bz2B7kwSFLhdJ/fj4X7TCnsRPYb2ocsgPSrj/sa4/5RhC9Be9FN0OWijcu7fx+MlBWtC96ObQR95eDxTorDUYIDfdD1VxeOa1MLm8WNxQGbk4PHz1MB6M3BH5e6wNx7sJY6h2SA388jC0m3vgOxSR+R0EKKupFxPEut2Mzyuvgnv633gPdEMBcYtcmEt/KSNEUtou56gh3bsg4ELd8G8tVj87Sw9CKvra9Dy1hf9V+J6REuzEHFXyzIFGl4m91fGWunckdOgMdOgpOHA11jNGiVYq14xVQl0evEHXH/3UCn2WgnWlQ2gZ561wuSvWaUuXATr1AP0ZW2HIuj4wky8bpwEe1gP0D3bSlMBJdmFqG1IWNT5x4YHsO72w/crfeDa68wkKMkicIzdpHuVHnCUHAjFjnwTPD9/G2otxzMFKmaCQqx0zF688YbnCUZxtVEDrAGouHAR7LzcGf/0h825IwPHCN6h9bFotxagIK1gsjtMinmDs59lgXtd7bLABDpQ16kFKGmeYKfkziyt/IWa/huqgTUGJU3lQJ3tWKxYG1xbgd6JN3B6lx0shTs37ssNAjTYTsGnnxNiAqIxKOkFFTkoSehSnNm5BdBfcwdOmo9sOre8tgoLwUUoyS/SEpTURNPAH3dmLy/FnBK5Qo4eoOI7L3DtaSQVYB1AiW9SShF7VMUOFcAagIb5JFgqkgVSBV4I/tECNMB8YViKtbdUR2cGfjXzf/bM40t29MnVdIMCc4lrQWTJk3aRXxLdNFKCU2jMF1c8uog0axxdQVE0csMIfKAN3ZvQK/ptWMsMs00ClSty9EnzIwvUzTyK5aMWCJXUM6kh5ohb66KJV6Mm9mqkER5/SQ0scNp4Fj2oM+ggjyubtioVk+fQ1TrO4W4eby7WH+KV6elRNKEvcxjRQuPcf5Pco08ENjJKULy7pnTlCWqO+6uIfutThZXi8H20Dd0KoQ9xyWiU29u4v6DahoY0fGF0cfJOtkQV+AK8Exlm+yGFL4z/BBgAP01qizRPW8YAAAAASUVORK5CYII=);
+    background-size: 0.43rem 0.43rem;
+    width: 0.43rem;
+    height: 0.43rem;
+}
+.pop-set-gm .p-radio-gm label{
+  display: block;
+  cursor: pointer;
+  background-color: #fffee5;
+  border-top: 1px solid #dedede;
+  height: 0.94rem;
+  color: #333;
+  font-weight: bolder;
+  font-size: 0.3rem;
+  padding: 0 0.7rem;
+  padding-top: 0.24rem;
+  position: relative;
+}
+.pop-set-gm .p-radio-gm label .like-radio-gm{
+  position: absolute;
+  right: 0.3rem;
+  top: 0.26rem;
+  border: 2px solid #cccccc;
+  width: 0.6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  border-radius: 0.6rem;
+  font-size: 0;
+}
+.pop-set-gm .p-radio-gm label .like-radio-gm i{
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #cccccc;
+  display: inline-block;
+  border-radius: 0.3rem;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+.pop-set-gm .p-radio-gm label .like-radio-gm.radio-checked-gm{
+  border: 2px solid #ff6600;
+}
+.pop-set-gm .p-radio-gm label .like-radio-gm.radio-checked-gm i{
+  background-color: #ff6600;
+}
+.pop-set-gm .tip-detail-gm{
+    font-size: 0.12rem;
+    font-size: 0.22rem;
+    color: #888888;
+    display: block;
+}
+.pop-set-gm .tip-detail-gm a{
+  font-size: 0.22rem;
+  color: #004efe;
+  text-decoration: underline;
+  margin-left: 0.3rem;
+}
+.pop-set-gm .color-red-gm{
+    color: #ff3600;
+}
+.pop-set-gm .color-blue-gm{
+    color: #004efe;
+    margin: 0 0.10rem;
+    cursor: pointer;
+    font-size: 0.12rem;
+}
+.pop-set-gm .p-bt-gm{
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 0.14rem 0;
+  border-radius: 0 0 0.12rem 0.12rem;
+}
+.pop-set-gm .play-game-gm{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.26rem;
+  line-height: 0.70rem;
+  color: #FFF;
+  cursor: pointer;
+  width: 2.60rem;
+  height: 0.70rem;
+  border-radius: 0.10rem;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fe8383),to(#f56060));
+}
+.pop-set-gm .tips-warn-gm{
+  color: #888;
+  font-size: 0.22rem;
+  line-height: 0.36rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.72rem;
+}
+
+/* 设置弹层里文字样式 */
+.pop-set-gm.set-cont-gm .text1-gm{
+  
+}
+
+/* 积分延迟和非延迟的代码 */
+.pop-set-gm .delay-yes-gm,
+.pop-set-gm .delay-no-gm{
+  display: none;
+}
+
+.pop-set-gm.pop-set-delay-yes-gm .delay-yes-gm,
+.pop-set-gm.pop-set-delay-no-gm .delay-no-gm{
+  display: block;
+}
+
+.pop-set-gm.pop-set-delay-yes-gm .delay-yes-gm.inline-block-gm,
+.pop-set-gm.pop-set-delay-no-gm .delay-no-gm.inline-block-gm{
+  display: inline-block;
+}
+
+/*设置按钮气泡提示语*/
+.settip-gm{
+  z-index: 10;
+  position: absolute;
+  width: 2.6rem;
+}
+.settip-gm .tips-bg-gm{
+  background: rgba(255,255,255,0.8);
+  border: 2px solid #FFF;
+  border-radius: 0.16rem;
+  background-clip: padding-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.settip-gm .tips-bg-gm{
+  background-color: #fff;
+  /*opacity: 0.8;*/
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #FFF;
+  border-radius: 0.16rem;
+  background-clip: padding-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.settip-gm:before,
+.settip-gm:after {
+  content: "";
+  position: absolute;
+  border-left: 0.11rem solid transparent;
+  border-right: 0.11rem solid transparent;
+  top: -0.12rem;
+}
+.settip-gm:before {
+  border-bottom: 0.15rem solid rgba(255,255,255,0.9);
+}
+.settip-gm .tips-cnt-gm{
+  position: relative;
+  font-size: 0.2rem;
+  color: #424242;
+  padding: 0.16rem 0.12rem;
+  line-height: 0.24rem;
+  font-family: "Microsoft yahei";
+}
+/* 设置游戏赢得奖励类型弹框  end */
+
+
+
+/*输分提示弹框 start*/
+.pop-loseRemind-gm{
+    display:none;
+    position:relative;
+    width:6.6rem;
+    font-size:0.28rem;
+    background:#fff;
+    border-radius:0.1rem;
+    font-family:microsoft yahei;
+}
+
+.pop-loseRemind-gm .p-close-gm,
+.pop-loseRemind-gm .p-bt-gm .p-btn-gm{
+    background:url(../../../images/game/common/lose_remind/poploseicon.png) no-repeat;
+    background-size:2.58rem 1.43rem;
+}
+.pop-loseRemind-gm .p-close-gm{
+    position:absolute;
+    width:0.59rem;
+    height:0.59rem;
+    top:0.2rem;
+    right:0.2rem;
+    background-position: 0 0;
+}
+.pop-loseRemind-gm .p-main-gm{
+    padding:1rem 0.84rem 0.6rem;
+    line-height:0.42rem;
+}
+.pop-loseRemind-gm .p-main-gm .p-contact-gm{
+    font-size:0.24rem;
+    color:#999999;
+}
+.pop-loseRemind-gm .p-main-gm .p-contact-gm .telColor-gm{
+    color:#f60;
+}
+.pop-loseRemind-gm .p-bt-gm{
+    text-align:center;
+    width:6.6rem;
+    padding:0.12rem 0;
+    background:#f5f5f5;
+    border-radius:0 0 0.1rem 0.1rem;
+}
+.pop-loseRemind-gm .p-bt-gm .p-btn-gm{
+    display:inline-block;
+    width:2.58rem;
+    height:0.7rem;
+    line-height:0.7rem;
+    text-align:center;
+    font-size:0.26rem;
+    color:#fff;
+    margin:0 0.1rem;
+    background-position:0 -0.7rem;
+}
+
+.page-viewport-width-640 .pop-loseRemind-gm{
+  width:5.6rem;
+  font-size:0.24rem;
+  border-radius:0.1rem;
+}
+.page-viewport-width-640 .pop-loseRemind-gm .p-close-gm,
+.page-viewport-width-640 .pop-loseRemind-gm .p-bt-gm .p-btn-gm{
+    background-size:2.2rem 1.22rem;
+}
+.page-viewport-width-640 .pop-loseRemind-gm .p-close-gm{
+  position:absolute;
+  width:0.52rem;
+  height:0.52rem;
+  top:0.17rem;
+  right:0.17rem;
+  background-position: 0 0;
+}
+.page-viewport-width-640 .pop-loseRemind-gm .p-main-gm{
+  padding:0.85rem 0.72rem 0.52rem;
+  line-height:0.36rem;
+}
+.page-viewport-width-640 .pop-loseRemind-gm .p-main-gm .p-contact-gm{
+  font-size:0.2rem;
+}
+.page-viewport-width-640 .pop-loseRemind-gm .p-bt-gm{
+    text-align:center;
+    width:5.6rem;
+    padding:0.1rem 0;
+    background:#f5f5f5;
+    border-radius:0 0 0.1rem 0.1rem;
+}
+.page-viewport-width-640 .pop-loseRemind-gm .p-bt-gm .p-btn-gm{
+    display:inline-block;
+    width:2.2rem;
+    height:0.61rem;
+    line-height:0.61rem;
+    text-align:center;
+    font-size:0.22rem;
+    color:#fff;
+    margin:0 0.1rem;
+    background-position:0 -0.6rem;
+}
+
+/*输分提示弹框 end*/
+
+/*推荐活动弹窗  start*/
+.pop-activity-gm {
+  font-size: 12px;
+  width: 5.40rem;
+  color: #000;
+  display: none;
+}
+
+/* 弹窗 icon */
+.pop-activity-gm .icon-activity-gm {
+  background: url(../../../images/game/common/icon-notice.png) no-repeat;
+  display: inline-block;
+  font-size: 0;
+  background-size: 1.00rem 2.50rem;
+}
+
+.pop-activity-gm .icon-activity1-gm,
+.pop-activity-gm .icon-activity2-gm{
+  width: 0.42rem;
+  height: 0.43rem;
+}
+
+.pop-activity-gm .icon-activity2-gm{
+  background-position: 0 -0.49rem;
+}
+
+.pop-activity-gm .icon-activity3-gm,
+.pop-activity-gm .icon-activity4-gm{
+  width: 0.38rem;
+  height: 0.39rem;
+}
+
+.pop-activity-gm .icon-activity3-gm{
+  background-position: 0 -0.99rem;
+}
+
+.pop-activity-gm .icon-activity4-gm{
+  background-position: 0 -1.49rem;
+}
+
+.pop-activity-gm .box-gm{
+  border-radius: 0.10rem;
+  overflow: hidden;
+}
+
+/* 推荐活动入口头部 */
+.pop-activity-gm .p-top-gm{
+  padding-top: 0.20rem;
+  padding-bottom: 0.20rem;
+  /*position: relative;*/
+  background-color: #fd6363;
+}
+
+.pop-activity-gm .p-top-gm .p-close-gm{
+  position: absolute;
+  right: 0.21rem;
+  top: 0.15rem;
+  cursor: pointer;
+}
+
+.pop-activity-gm .p-top-gm h3{
+  padding: 0;
+  margin: 0;
+  font-size: 0.30rem;
+  line-height: 0.30rem;
+  text-align: center;
+  color: #FFF;
+}
+
+/* 推荐活动入口中部 */
+.pop-activity-gm .p-main-gm{
+  background-color: #EEE;
+  max-height: 8rem;
+  overflow-y: auto;
+}
+
+.pop-activity-gm .p-main-gm .load-cnt-gm{
+  display: none;
+  color: #666;
+}
+
+.pop-activity-gm .p-main-gm .load-cnt-gm.loading-cnt-gm,
+.pop-activity-gm .p-main-gm .load-cnt-gm.loadfail-cnt-gm,
+.pop-activity-gm .p-main-gm .load-cnt-gm.loadtip-cnt-gm{
+  margin-top: 1.00rem;
+  margin-bottom: 1.00rem;
+  text-align: center;
+  font-size: 0.30rem;
+}
+
+.pop-activity-gm .p-main-gm .load-cnt-gm .retry-gm{
+  color: #F00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pop-activity-gm .p-main-gm.loading-gm .loading-cnt-gm,
+.pop-activity-gm .p-main-gm.loaded-gm .loaded-cnt-gm,
+.pop-activity-gm .p-main-gm.loadtip-gm .loadtip-cnt-gm,
+.pop-activity-gm .p-main-gm.loadfail-gm .loadfail-cnt-gm{
+  display: block;
+}
+
+.pop-activity-gm .p-main-gm .sec-gm{
+  margin-top: 0.09rem;
+  margin-bottom: 0.09rem;
+  border-bottom: 1px solid #adadad;
+}
+
+/* 内容 标题 */
+.pop-activity-gm .p-main-gm .sec-title-gm{
+  padding-top: 0.20rem;
+  padding-bottom: 0.20rem;
+  padding-left: 0.30rem;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.pop-activity-gm .p-main-gm .sec-title-gm .horn-gm,
+.pop-activity-gm .p-main-gm .sec-title-gm .text-gm,
+.pop-activity-gm .p-main-gm .sec-title-gm .arrow-gm{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pop-activity-gm .p-main-gm .sec-title-gm .text-gm{
+  font-size: 0.28rem;
+  font-weight: bold;
+  margin-left: 0.12rem;
+  width: 3.93rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  text-align: left;
+}
+.pop-activity-gm .p-main-gm .load-cnt-gm a{
+  display: block;
+  text-align: center;
+  width: 5.4rem;
+  height: 1.56rem;
+  margin: 0 auto;
+  margin-top: -0.01rem;
+}
+.pop-activity-gm .p-main-gm .load-cnt-gm a img{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* 内容 文本 */
+.pop-activity-gm .p-main-gm .sec-cnt-gm{
+  background-color: #fffee7;
+  padding-left: 0.27rem;
+  padding-right: 0.27rem;
+  padding-top: 0.10rem;
+  padding-bottom: 0.10rem;
+  display: none;
+}
+
+.pop-activity-gm .p-main-gm .sec-cnt-gm ul,
+.pop-activity-gm .p-main-gm .sec-cnt-gm li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pop-activity-gm .p-main-gm .sec-cnt-gm ul{
+  margin-left: 0.46rem;
+}
+
+.pop-activity-gm .p-main-gm .sec-cnt-gm li{
+  font-size: 0.22rem;
+  color: #666;
+  list-style-type: decimal;
+  line-height: 0.36rem;
+  margin-top: 0.10rem;
+  margin-bottom: 0.10rem;
+}
+
+/* 内容 按钮 */
+.pop-activity-gm .p-main-gm .sec-cnt-gm .go-wrap-gm{
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.pop-activity-gm .p-main-gm .sec-cnt-gm .go-gm{
+  padding: 0.21rem 0.64rem;
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+  color: #ffaf04;
+  border: 2px solid #ffaf04;
+  border-radius: 0.40rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* 弹窗底部 */
+.pop-activity-gm .p-bt-gm{
+  padding-top: 0.30rem;
+  padding-bottom: 0.30rem;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.pop-activity-gm .play-game-gm{
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fd6363;
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #FFF;
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+  padding-left: 0.67rem;
+  padding-right: 0.67rem;
+  border-radius: 0.10rem;
+  cursor: pointer;
+}
+
+/* 750 宽度下的样式 */
+.page-viewport-width-750 .pop-activity-gm{
+  width: 6.32rem;
+}
+
+.page-viewport-width-750 .pop-activity-gm .p-main-gm .sec-title-gm .text-gm{
+  width: 5rem;
+}
+/*推荐活动添加icon*/
+.page-viewport-width-750 .pop-activity-gm .p-main-gm .load-cnt-gm a{
+  width: 6.32rem;
+  margin-top: -0.02rem;
+}
+
+/* 推荐活动 开始, 默认的属性为 none */
+#btn-pop-activity-gm{
+  display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+#btn-pop-activity-gm .img-pop-gm{
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*当游戏页面里有 .btn-pop-activity-show-gm class时，显示推荐活动入口icon*/
+html.btn-pop-activity-show-gm #btn-pop-activity-gm{
+  display: block;
+}
+/*推荐活动弹窗  end*/
+
+
+/* 查看别处游戏币 */
+
+.pop-whereyxb-gm {
+  font-size: 12px;
+  width: 6.60rem;
+  color: #000;
+  display: none;
+}
+
+/* 弹窗 icon */
+.pop-whereyxb-gm .icon-whereyxb-gm {
+  background: url(../../../images/game/common/icon-whereyxb.png) no-repeat;
+  display: inline-block;
+  font-size: 0;
+  background-size: 5rem 5rem;
+}
+
+.pop-whereyxb-gm .icon-notice1-gm,
+.pop-whereyxb-gm .icon-notice2-gm{
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.pop-whereyxb-gm .icon-notice2-gm{
+  background-position: 0 -0.49rem;
+}
+
+.pop-whereyxb-gm .icon-notice3-gm,
+.pop-whereyxb-gm .icon-notice4-gm{
+  width: 0.38rem;
+  height: 0.39rem;
+}
+
+.pop-whereyxb-gm .icon-notice3-gm{
+  background-position: 0 -0.99rem;
+}
+
+.pop-whereyxb-gm .icon-notice4-gm{
+  background-position: 0 -1.49rem;
+}
+
+.pop-whereyxb-gm .box-gm{
+  border-radius: 0.10rem;
+  overflow: hidden;
+}
+
+/* 公告头部 */
+.pop-whereyxb-gm .p-top-gm{
+  padding-top: 0.30rem;
+  padding-bottom: 0.30rem;
+  background-color: #fd6363;
+  position: relative;
+}
+
+.pop-whereyxb-gm .p-top-gm .p-close-gm{
+  position: absolute;
+  right: 0.21rem;
+  top: 0.15rem;
+  cursor: pointer;
+}
+
+.pop-whereyxb-gm .p-top-gm h3{
+  padding: 0;
+  margin: 0;
+  font-size: 0.3rem;
+  line-height: 0.30rem;
+  text-align: center;
+  color: #FFF;
+}
+
+/* 公告中部 */
+.pop-whereyxb-gm .p-main-gm{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #EEE;
+  /*max-height: 4.9rem;*/
+}
+
+.pop-whereyxb-gm .p-main-gm .load-cnt-gm{
+  display: none;
+  color: #666;
+  overflow-y: auto;
+  max-height: 3.66rem;
+
+
+}
+
+.pop-whereyxb-gm .p-main-gm .load-cnt-gm.loading-cnt-gm,
+.pop-whereyxb-gm .p-main-gm .load-cnt-gm.loadtip-cnt-gm,
+.pop-whereyxb-gm .p-main-gm .load-cnt-gm.loadfail-cnt-gm{
+  margin-top: 1.00rem;
+  margin-bottom: 1.00rem;
+  text-align: center;
+  font-size: 0.30rem;
+}
+
+.pop-whereyxb-gm .p-main-gm .load-cnt-gm .retry-gm{
+  color: #F00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pop-whereyxb-gm .p-main-gm.loading-gm .loading-cnt-gm,
+.pop-whereyxb-gm .p-main-gm.loaded-gm .loaded-cnt-gm,
+.pop-whereyxb-gm .p-main-gm.loadtip-gm .loadtip-cnt-gm,
+.pop-whereyxb-gm .p-main-gm.loadfail-gm .loadfail-cnt-gm{
+  display: block;
+}
+
+.pop-whereyxb-gm .p-main-gm .sec-gm{
+  margin-top: 0.09rem;
+  margin-bottom: 0.09rem;
+  position: relative;
+}
+
+/* 内容 标题 */
+.pop-whereyxb-gm .p-main-gm .sec-title-gm{
+  padding-top: 0.20rem;
+  padding-bottom: 0.20rem;
+  padding-left: 0.30rem;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.pop-whereyxb-gm .p-main-gm .sec-title-gm .horn-gm,
+.pop-whereyxb-gm .p-main-gm .sec-title-gm .text-gm,
+.pop-whereyxb-gm .p-main-gm .sec-title-gm .arrow-gm{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pop-whereyxb-gm .p-main-gm .sec-title-gm .text-gm{
+  font-size: 0.28rem;
+  font-weight: bold;
+  margin-left: 0.12rem;
+  width: 3.93rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+
+/* 内容 文本 */
+.pop-whereyxb-gm .p-main-gm .sec-cnt-gm{
+  background-color: #fffee7;
+  padding-left: 0.27rem;
+  padding-right: 0.27rem;
+  padding-top: 0.10rem;
+  padding-bottom: 0.10rem;
+  display: none;
+}
+
+.pop-whereyxb-gm .p-main-gm .sec-cnt-gm ul,
+.pop-whereyxb-gm .p-main-gm .sec-cnt-gm li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pop-whereyxb-gm .p-main-gm .sec-cnt-gm ul{
+  margin-left: 0.46rem;
+}
+
+.pop-whereyxb-gm .p-main-gm .sec-cnt-gm li{
+  font-size: 0.22rem;
+  color: #666;
+  list-style-type: decimal;
+  line-height: 0.36rem;
+  margin-top: 0.10rem;
+  margin-bottom: 0.10rem;
+}
+
+
+
+
+/* 弹窗底部 */
+.pop-whereyxb-gm .p-bt-gm{
+  padding-top: 0.30rem;
+  padding-bottom: 0.30rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pop-whereyxb-gm .play-game-gm{
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fd6363;
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #FFF;
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+  padding-left: 0.67rem;
+  padding-right: 0.67rem;
+  border-radius: 0.10rem;
+  cursor: pointer;
+}
+
+.pop-whereyxb-gm .game-name-gm{
+  font-size: 0.26rem;
+  color: #333;
+  font-weight: bold;
+  width: 3.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pop-whereyxb-gm .last-coin-gm{
+  font-size: 0;
+  color: #999;
+  height: 0.36rem;
+  line-height: 0.36rem;
+}
+.pop-whereyxb-gm .last-coin-til{
+    font-size: 0.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pop-whereyxb-gm .last-num-gm{
+  font-size: 0.3rem;
+  color: #fd6363;
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline-block;
+  width: 2.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pop-whereyxb-gm .goto-game-gm{
+  background-position: 0 -0.93rem;
+  width: 1.8rem;
+  height: 0.73rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.18rem;
+  right: 0.2rem;
+  font-size: 0.26rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.73rem;
+  text-decoration: none;
+}
+.pop-whereyxb-gm .area-left-gm{
+  
+}
+/* 查看别处游戏币 */
+
+/* 查看别处游戏币 在640下面*/
+.page-viewport-width-640 .pop-whereyxb-gm {
+  font-size: 12px;
+  width: 5.632rem;
+  color: #000;
+  display: none;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .icon-whereyxb-gm {
+  background: url(../../../images/game/common/icon-whereyxb.png) no-repeat;
+  display: inline-block;
+  font-size: 0;
+  background-size: 4.26666667rem 4.26666667rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice1-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice2-gm {
+  width: 0.512rem;
+  height: 0.512rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice2-gm {
+  background-position: 0 -0.41813333rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice3-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice4-gm {
+  width: 0.32426667rem;
+  height: 0.3328rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice3-gm {
+  background-position: 0 -0.8448rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .icon-notice4-gm {
+  background-position: 0 -1.27146667rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .box-gm {
+  border-radius: 0.08533333rem;
+  overflow: hidden;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-top-gm {
+  padding-top: 0.256rem;
+  padding-bottom: 0.256rem;
+  background-color: #fd6363;
+  position: relative;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-top-gm .p-close-gm {
+  position: absolute;
+  right: 0.1792rem;
+  top: 0.128rem;
+  cursor: pointer;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-top-gm h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.256rem;
+  line-height: 0.256rem;
+  text-align: center;
+  color: #FFF;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #EEE
+  /*max-height: 4.9rem*@rp;*/
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .load-cnt-gm {
+  display: none;
+  color: #666;
+  overflow-y: auto;
+  max-height: 3.1232rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .load-cnt-gm.loading-cnt-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .load-cnt-gm.loadtip-cnt-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .load-cnt-gm.loadfail-cnt-gm {
+  margin-top: 0.85333333rem;
+  margin-bottom: 0.85333333rem;
+  text-align: center;
+  font-size: 0.256rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .load-cnt-gm .retry-gm {
+  color: #F00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm.loading-gm .loading-cnt-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm.loaded-gm .loaded-cnt-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm.loadtip-gm .loadtip-cnt-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm.loadfail-gm .loadfail-cnt-gm {
+  display: block;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-gm {
+  margin-top: 0.0768rem;
+  margin-bottom: 0.0768rem;
+  position: relative;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-title-gm {
+  padding-top: 0.17066667rem;
+  padding-bottom: 0.17066667rem;
+  padding-left: 0.256rem;
+  background-color: #FFF;
+  cursor: pointer;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-title-gm .horn-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-title-gm .text-gm,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-title-gm .arrow-gm {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-title-gm .text-gm {
+  font-size: 0.23893333rem;
+  font-weight: bold;
+  margin-left: 0.1024rem;
+  width: 3.3536rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-cnt-gm {
+  background-color: #fffee7;
+  padding-left: 0.2304rem;
+  padding-right: 0.2304rem;
+  padding-top: 0.08533333rem;
+  padding-bottom: 0.08533333rem;
+  display: none;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-cnt-gm ul,
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-cnt-gm li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-cnt-gm ul {
+  margin-left: 0.39253333rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-main-gm .sec-cnt-gm li {
+  font-size: 0.18773333rem;
+  color: #666;
+  list-style-type: decimal;
+  line-height: 0.3072rem;
+  margin-top: 0.08533333rem;
+  margin-bottom: 0.08533333rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .p-bt-gm {
+  padding-top: 0.256rem;
+  padding-bottom: 0.256rem;
+  text-align: center;
+  background-color: #fff;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .play-game-gm {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fd6363;
+  font-size: 0.2048rem;
+  font-weight: bold;
+  color: #FFF;
+  padding-top: 0.2048rem;
+  padding-bottom: 0.2048rem;
+  padding-left: 0.57173333rem;
+  padding-right: 0.57173333rem;
+  border-radius: 0.08533333rem;
+  cursor: pointer;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .game-name-gm {
+  font-size: 0.22186667rem;
+  color: #333;
+  font-weight: bold;
+  width: 3.328rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .last-coin-gm {
+  font-size: 0;
+  color: #999;
+  height: 0.3072rem;
+  line-height: 0.3072rem;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .last-coin-til {
+  font-size: 0.17066667rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .last-num-gm {
+  font-size: 0.256rem;
+  color: #fd6363;
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline-block;
+  width: 2.304rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-viewport-width-640 .pop-whereyxb-gm .goto-game-gm {
+  background-position: 0 -0.7936rem;
+  width: 1.536rem;
+  height: 0.62293333rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.1536rem;
+  right: 0.17066667rem;
+  font-size: 0.22186667rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.62293333rem;
+  text-decoration: none;
+}
+/* 查看别处游戏币 在640下面*/
