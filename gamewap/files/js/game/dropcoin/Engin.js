@@ -60,15 +60,15 @@ tjb.data = {
     // lines:{'src':'images/lines.png'}
   },
   ajaxUrl: {
-    url_tologin: "/?act=user&st=login",
+    url_tologin: "http://youxi56-wap.stg2.24cp.com/?act=user&st=login",
     url_login_wlt: "native://login",
-    url_userLogin: GM.userLoginUrl, //登录地址
-    url_userInfoData: "?act=game_gamebase&st=queryUserAccount&gameId=" + window.gameId, //获取万里通积分 T点 T币
+    url_userLogin: true,//GM.userLoginUrl, //登录地址
+    url_userInfoData: 'http://127.0.0.1:8080/game/dropcoin/queryUserAccount.php',// "/?act=game_gamebase&st=queryUserAccount&gameId=" + window.gameId, //获取万里通积分 T点 T币
     url_recharge: "/?act=payment", //充值
     url_login: "/?act=game_tjb&st=login_status", //判断登录状态
     url_PoolData: "/?act=game_tjb&st=pool", //奖池数据
     url_play: 'php/play.php', //"/?act=game_tjb&st=play",                  //投币
-    url_myInnerData: "http://youxi56-wap.stg2.24cp.com/?act=game_gamecommon&st=getinnerlist&gameId=" + window.gameId + "&type=0", //记录
+    url_myInnerData: "?act=game_gamecommon&st=getinnerlist&gameId=" + window.gameId + "&type=0", //记录
     url_newlist: "/?act=game_gamecommon&st=getMarquee&gameId=" + window.gameId + "&type=2", //跑马
     url_getRewardList: "?act=game_tjb&st=getRewardList", //宝箱记录接口
     url_mermaidDetail: "/?act=game_tjb&st=mermaidDetail",
@@ -76,7 +76,7 @@ tjb.data = {
     url_openChest: "/?act=game_tjb&st=openChest",
     url_getBetScroll: "/?act=game_gamecommon&st=get_bet_scroll&gameId=" + window.gameId, //土豪排行榜页面跑马灯接口
     url_getBetRank: "/?act=game_gamecommon&st=get_bet_rank&gameId=" + window.gameId, //土豪排行榜（日/周/月/总）接口
-    // url_getBetRank: "http://gameapp.wanlitong.com/?act=game_gamecommon&st=get_bet_rank&gameId=1038", //土豪排行榜（日/周/月/总）接口
+    // url_getBetRank: "http://gameapp.wanlitong.com/http://youxi56-wap.stg2.24cp.com/?act=game_gamecommon&st=get_bet_rank&gameId=1038", //土豪排行榜（日/周/月/总）接口
   }
 
 }
@@ -564,6 +564,7 @@ tjb.getAjaxData = function (_type, _url, callback, _err, _data, _time, _f, _d) {
     type: _type,
     url: _url,
     data: _data,
+    dataType: 'JSONP',//here
     // async: true,
     timeout: self.data.ajaxtimeout,
     success: function (response) {

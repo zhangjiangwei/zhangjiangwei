@@ -8,15 +8,15 @@
   <meta name="keywords" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=10">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" type="text/css" href="/files/css/game/dropcoin/tjb.css?v=201604111758">
-  <script type="text/javascript" src="/files/js/zepto-1.1.6.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/main.js?v=201604111758"></script>
+  <link rel="stylesheet" type="text/css" href="../../../files/css/game/dropcoin/tjb.css?v=201604111758">
+  <script type="text/javascript" src="../../../files/js/zepto-1.1.6.js?v=201604111758"></script>
+  <script type="text/javascript" src="../../../files/js/main.js?v=201604111758"></script>
   <script type="text/javascript">
   var gameId = parseInt("39187");
   var winScore = parseInt("");
   var tradeName = "疯狂投金币";
-  var audioSrc = '/files/audio/game/dropcoin/';
-  var imgSrc = '/files/images/game/dropcoin/';
+  var audioSrc = '../../../files/audio/game/dropcoin/';
+  var imgSrc = '../../../files/images/game/dropcoin/';
   var gameSource = "0";
   var haswltnativelogin = "";
   var poolTotalAmount = "";
@@ -44,7 +44,7 @@
   </script>
   
   
-<link rel="stylesheet" href="/files/css/game/public/common.css?v=201604111758">
+<link rel="stylesheet" href="../../../files/css/game/public/common.css?v=201604111758">
 
 <style type='text/css'>
 	html
@@ -65,7 +65,7 @@
 	  }
 	}
 	GM.debugFE = false; // 默认为 false, 不出现log
-	GM.userLogged = false; // 判断用户是否已登录
+	GM.userLogged = true; // 判断用户是否已登录
 	// 人机游戏的 socketIoUrl 和 token
 	GM.socketIoUrl_RJ = "http://122.224.97.150:9589/";
 	GM.token_RJ = "";
@@ -261,13 +261,13 @@
         <div class="loadBar">
           <div class="load"></div>
         </div>
-        <div class="bird"><img src="/files/images/game/dropcoin/birdanimate.gif"></div>
+        <div class="bird"><img src="../../../files/images/game/dropcoin/birdanimate.gif"></div>
       </div>
       <div class="mainBox">
         <div class="bg-box">
           <ul>
-            <li class="cur"><img src="/files/images/game/dropcoin/bg-gamebox1.jpg"></li>
-            <li><img src="/files/images/game/dropcoin/bg-gamebox2.jpg"></li>
+            <li class="cur"><img src="../../../files/images/game/dropcoin/bg-gamebox1.jpg"></li>
+            <li><img src="../../../files/images/game/dropcoin/bg-gamebox2.jpg"></li>
           </ul><i class="sign-cloud1"></i><i class="sign-cloud2"></i>
         </div>
         <header>
@@ -276,7 +276,7 @@
               <button class="fl btn-left"></button>
               <button class="fl btn-rank"></button>
             </div>
-            <figure class="logo"><img src="/files/images/game/dropcoin/logo.png">
+            <figure class="logo"><img src="../../../files/images/game/dropcoin/logo.png">
               <figcaption>疯狂投金币</figcaption>
             </figure>
             <div class="fr">
@@ -427,9 +427,9 @@
                           <p>1.购买金币进行游戏</p>
                           <p>2.等待金币移动至理想位置，点击屏幕进行投币。</p>
                           <p>3.根据金币掉落位置，判定奖励结果，玩家选择 是否领取奖励。</p>
-                          <p><img src="/files/images/game/dropcoin/guide1.png"></p>
-                          <p><img src="/files/images/game/dropcoin/guide2.png"></p>
-                          <p><img src="/files/images/game/dropcoin/guide3.png"></p>
+                          <p><img src="../../../files/images/game/dropcoin/guide1.png"></p>
+                          <p><img src="../../../files/images/game/dropcoin/guide2.png"></p>
+                          <p><img src="../../../files/images/game/dropcoin/guide3.png"></p>
                         </li>
                       </ul>
                     </div>
@@ -725,168 +725,96 @@
               <div class="rotate-point"></div>
             </div>
           </div>
-          <div class="bird"><img src="/files/images/game/dropcoin/birdanimate.gif"></div>
+          <div class="bird"><img src="../../../files/images/game/dropcoin/birdanimate.gif"></div>
         </div>
       </div>
     </div>
   </div>
   
-  <link href="/files/css/common_adv.css?v=201604111758" type="text/css" rel="stylesheet"/>
-<script type="text/javascript">
-    ;(function($){
-        if(!$){
-            return;
-        }
-        var init = function(){
-            /*
-                获取Cookie值
-            */
-            function getCookie(name){
-                var nameEQ = name + '=';
-                var ca = document.cookie.split(';');
-                for(var i = 0;i<ca.length;i++){
-                    var c = ca[i];
-                    while (c.charAt(0) == ' '){
-                        c = c.substring(1, c.length);
-                    }
-                    if(c.indexOf(nameEQ) == 0){
-                        return unescape(c.substring(nameEQ.length, c.length));
-                    }
-                }
-                return false;
-            }
+  <script type="text/javascript">
+      ;(function($){
+          if(!$){
+              return;
+          }
+          var init = function(){
+              /*
+                  获取Cookie值
+              */
+              function getCookie(name){
+                  var nameEQ = name + '=';
+                  var ca = document.cookie.split(';');
+                  for(var i = 0;i<ca.length;i++){
+                      var c = ca[i];
+                      while (c.charAt(0) == ' '){
+                          c = c.substring(1, c.length);
+                      }
+                      if(c.indexOf(nameEQ) == 0){
+                          return unescape(c.substring(nameEQ.length, c.length));
+                      }
+                  }
+                  return false;
+              }
 
-            var gameId = "39187";
-            var total_count = "1";
-            total_count = Number(total_count);
+              var gameId = "39187";
+              var total_count = "1";
+              total_count = Number(total_count);
 
-            // 如果不是数值，直接 return
-            if( isNaN(total_count) ){
-                return;
-            }
-            var page;
-            if (total_count == 1){
-                page = 1;
-            }else{
-                page = 2;
-            }
+              // 如果不是数值，直接 return
+              if( isNaN(total_count) ){
+                  return;
+              }
+              var page;
+              if (total_count == 1){
+                  page = 1;
+              }else{
+                  page = 2;
+              }
 
-            var $otherGames = $('.other-games-gm');
-            var $changeBtn = $otherGames.find('.changeBtn-gm');
-            var $adData = $otherGames.find('.ad-data-gm');
-            var track = getCookie('track_u');
+              var $otherGames = $('.other-games-gm');
+              var $changeBtn = $otherGames.find('.changeBtn-gm');
+              var $adData = $otherGames.find('.ad-data-gm');
+              var track = getCookie('track_u');
 
-            $changeBtn.on('click',function(){
-                if (page == total_count+1){
-                    page = 1;
-                }
-                var data = {
-                    track: track,
-                    game_id: gameId,
-                    page: page
-                };
-                $.ajax({
-                    url : "/?act=adchanneltemplate&st=get_page_ad_data",
-                    type : "get",
-                    timeout:30000,
-                    dataType:'json',
-                    data : data,
-                    success: function(res){//如果调用php成功
-                        res = res || {};
-                        var ad_data = res.ad_data || [];
-                        var len = ad_data.length;
-                        page++;
-                        $adData.empty();
-                        var str = "", item = "";
-                        for (var k = 0; k < len; k++){
-                            item = ad_data[k];
-                            str += '<a href="'+item.link+'" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道"><span><img src="'+item.subpic+'" alt="'+item.title+'"></span><h4>'+item.title+'</h4><p>'+item.subtitle+'</p></a>';
-                        }
-                        $adData.append(str);
-                    }
-                })
-            });
-        }
-        $(init);
-    })(window.Zepto || window.jQuery);
-</script>
-	<div class="other-games-gm">
-                  		<div class="common-sec3-gm">
-        	<a href="/?act=download&amp;app=ylc_qy" otype="button" otitle="平台合作渠道-疯狂投金币-平安游戏IOS大厅" class="ios-download-gm">平安游戏IOS大厅</a>
-            <a href="/?act=more&amp;st=download" otype="button" otitle="平台合作渠道-疯狂投金币-平安游戏安卓大厅" class="android-download-gm">平安游戏安卓大厅</a>
-        </div>
-                                <div class="change-games-gm clearfix">
-        	<span class="otherGameTitle-gm">更多精彩</span>
-        	<span class="changeBtn-gm clearfix"><i></i><p>换一批</p></span>
-        </div>
-  		<div class="common-games-gm">
-        	<div class="ad-data-gm clearfix">
-                                <a href="http://gameapp.wanlitong.com/?act=guagualewap&track_u=bdss" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2016_04/14603430427827.jpg" alt="VIP10">
-                    </span>
-                    <h4>VIP10</h4>
-                    <p>1qw</p>
-                </a>
-                                <a href="http://gameapp.wanlitong.com/?act=guagualewap&track_u=bdss" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2016_04/14603429906812.jpg" alt="冻结测试">
-                    </span>
-                    <h4>冻结测试</h4>
-                    <p>冻结测试</p>
-                </a>
-                                <a href="http://164test11-admin.stg2.24cp.com/?act=index&st=main&selectId=5" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2016_04/14603429451759.jpg" alt="广告位4">
-                    </span>
-                    <h4>广告位4</h4>
-                    <p>哈哈</p>
-                </a>
-                                <a href="http://164test11-admin.stg2.24cp.com/?act=index&amp;amp;st=main&amp;amp;selectId=5" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2015_09/14434097386245.jpg" alt="11">
-                    </span>
-                    <h4>11</h4>
-                    <p>1235666</p>
-                </a>
-                                <a href="?act=game_line" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2015_09/14428270939541.png" alt="112">
-                    </span>
-                    <h4>112</h4>
-                    <p>111</p>
-                </a>
-                                <a href="111" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2015_09/14428270939541.png" alt="111">
-                    </span>
-                    <h4>111</h4>
-                    <p>111</p>
-                </a>
-                                <a href="111" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2015_09/14428270939541.png" alt="111">
-                    </span>
-                    <h4>111</h4>
-                    <p>111</p>
-                </a>
-                                <a href="111" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道">
-                    <span>
-                        <img src="/files/upload/2015_09/14428270939541.png" alt="111">
-                    </span>
-                    <h4>111</h4>
-                    <p>111</p>
-                </a>
-                            </div>
-        </div>
-            </div>  <script type="text/javascript" src="/files/js/easeljs-0.8.1.min.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/tweenjs-0.6.0.min.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/game/dropcoin/Box2dWeb-2.1.a.3.min.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/plugins/lightbox/lightbox_v2.min.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/game/dropcoin/Engin.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/game/dropcoin/EnginDenpend.js?v=201604111758"></script>
-  <script type="text/javascript" src="/files/js/game/dropcoin/marquee.js?v=201604111758"></script>
-  <!--<script type="text/javascript" src="js/rotate.js"></script>-->
+              $changeBtn.on('click',function(){
+                  if (page == total_count+1){
+                      page = 1;
+                  }
+                  var data = {
+                      track: track,
+                      game_id: gameId,
+                      page: page
+                  };
+                  $.ajax({
+                      url : "/?act=adchanneltemplate&st=get_page_ad_data",
+                      type : "get",
+                      timeout:30000,
+                      dataType:'json',
+                      data : data,
+                      success: function(res){//如果调用php成功
+                          res = res || {};
+                          var ad_data = res.ad_data || [];
+                          var len = ad_data.length;
+                          page++;
+                          $adData.empty();
+                          var str = "", item = "";
+                          for (var k = 0; k < len; k++){
+                              item = ad_data[k];
+                              str += '<a href="'+item.link+'" class="crazyM-gm crazy1-gm" otype="button" otitle="平台合作渠道-疯狂投金币-平台广告渠道"><span><img src="'+item.subpic+'" alt="'+item.title+'"></span><h4>'+item.title+'</h4><p>'+item.subtitle+'</p></a>';
+                          }
+                          $adData.append(str);
+                      }
+                  })
+              });
+          }
+          $(init);
+      })(window.Zepto || window.jQuery);
+  </script>
+  <script type="text/javascript" src="../../../files/js/easeljs-0.8.1.min.js?v=201604111758"></script>
+  <script type="text/javascript" src="../../../files/js/tweenjs-0.6.0.min.js?v=201604111758"></script>
+  <script type="text/javascript" src="../../../files/js/game/dropcoin/Box2dWeb-2.1.a.3.min.js?v=201604111758"></script>
+  <script type="text/javascript" src="../../../files/js/plugins/lightbox_v2.min.js?v=201604111758"></script>
+  <script type="text/javascript" src="../../../files/js/game/dropcoin/Engin.js?v=201604111758"></script>
+  <script type="text/javascript" src="../../../files/js/game/dropcoin/marquee.js?v=201604111758"></script>
 </body>
 
 </html>

@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+/************* Reset CSS *************/
+/* 清除内外边距 */
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset,iframe, lengend, label, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+
+h1 ,h2 ,h3 ,h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12*@rem 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { /*text-decoration: underline;*/ }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img, button{ border: none;}
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+  font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+img, iframe, table, form{ vertical-align: top;}
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/**底部推荐游戏**/
+.other-games-gm {
+  background: #F5F5F5;
+  overflow: hidden;
+  max-width:7.5rem;
+  margin:0 auto;
+}
+.other-games-gm .common-sec3-gm {
+  text-align: center;
+  margin: 0.20rem auto 0;
+  font-size: 0;
+}
+.other-games-gm .common-sec3-gm a {
+  font-family: 'Microsoft Yahei';
+  display: inline-block;
+  width: 3.2rem;
+  height: 0.94rem;
+  text-align: center;
+  line-height: 0.94rem;
+  font-size: 0.26rem;
+  color: white;
+  vertical-align: top;
+  border-radius: 0.50rem;
+  text-decoration: none;
+  padding-top: 0.14rem;
+  text-indent: -99rem;
+  overflow: hidden;
+  background: url(../images/common_adv/sec-btns-new.png) no-repeat;
+  background-size: 6.5rem 0.94rem;
+  margin: 0 0.18rem;
+}
+.other-games-gm .common-sec3-gm .ios-download-gm {
+  background-position: -0.1rem 0.14rem;
+}
+.other-games-gm .common-sec3-gm .android-download-gm {
+  background-position: -3.31rem 0.14rem;
+}
+.other-games-gm .common-games-gm {
+  background-color: #fff;
+  font-size: 0;
+}
+.other-games-gm .common-games-gm>div{padding: 0 2%; font-size:0; background:url(../images/common_adv/gamelistBg-new.png) no-repeat center top;background-size: 7.5rem 2.6rem;}
+.other-games-gm .change-games-gm{ height:0.35rem; padding-right: 7%; padding-bottom: 0.28rem;  padding-top: 0.40rem;}
+.other-games-gm .change-games-gm .otherGameTitle-gm{ display: block;    float: left;    color: #fd6363;    line-height: 0.32rem; font-size: 0.32rem;    padding-left: 7%;font-family: "微软雅黑";}   
+.other-games-gm .change-games-gm .changeBtn-gm{ float:right; display:block; }
+.other-games-gm .change-games-gm .changeBtn-gm i{position: relative;z-index:0;top:-0.04rem;left:0; float:left;height:0.35rem; width:0.3rem; background: url(../images/common_adv/change.png) no-repeat center center;  background-size: 0.29rem 0.32rem;}
+.other-games-gm .change-games-gm .changeBtn-gm p{ float:left;color: #3f3f3f;  line-height: 0.35rem;
+  font-size: 0.24rem;  padding: 0 0.1rem;font-family: "微软雅黑";}
+
+.other-games-gm .crazyM-gm {
+  text-align: center;
+  display: block;
+  float:left;
+  width:25%;
+  height: 2.4rem;
+}
+.other-games-gm .crazyM-gm span{margin-top: 0.25rem;  display: block;}
+.other-games-gm .crazyM-gm img {
+  width: 1.20rem;
+  height: 1.20rem;
+  margin:0 auto;
+}
+.other-games-gm .crazyM-gm h4 {
+	max-width:1.8rem;
+	font-weight: normal;
+	color: #3f3f3f;
+	font-size: 0.22rem;
+	line-height: 0.42rem;
+	margin-top: 0.1rem;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+	margin:0 auto;
+	text-decoration:none;
+}
+.other-games-gm .crazyM-gm p {
+	max-width:1.8rem;
+	font-family: Microsoft YaHei;
+	color: #ff8a00;
+	font-size: 0.18rem;
+	line-height: 0.20rem;
+	margin:0 auto;
+	text-decoration:none;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+/*640下等比缩放*/
+.page-viewport-width-640 .other-games-gm .common-sec3-gm a{
+  width: 2.73rem;
+  height: 0.81rem;
+  background-size: 5.5466rem 0.8021rem;
+}
+.page-viewport-width-640 .other-games-gm .common-sec3-gm .ios-download-gm {
+  background-position: -0.07rem 0.14rem;
+}
+.page-viewport-width-640 .other-games-gm .common-sec3-gm .android-download-gm {
+  background-position: -2.81rem 0.14rem;
+}

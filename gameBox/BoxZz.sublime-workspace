@@ -148,7 +148,7 @@
 	"buffers":
 	[
 		{
-			"file": "files/js/game/dropcoin/Engin.js",
+			"file": "/D/gitgame/gamewap/files/js/game/dropcoin/Engin.js",
 			"settings":
 			{
 				"buffer_size": 60181,
@@ -156,7 +156,7 @@
 			}
 		},
 		{
-			"file": "/D/gitgame/gameBox/index.html",
+			"file": "index.html",
 			"settings":
 			{
 				"buffer_size": 695,
@@ -164,7 +164,7 @@
 			}
 		},
 		{
-			"file": "/D/gitgame/gameBox/init.js",
+			"file": "init.js",
 			"settings":
 			{
 				"buffer_size": 437,
@@ -172,7 +172,7 @@
 			}
 		},
 		{
-			"file": "/D/gitgame/gameBox/main.js",
+			"file": "main.js",
 			"settings":
 			{
 				"buffer_size": 535,
@@ -180,10 +180,10 @@
 			}
 		},
 		{
-			"file": "/D/gitgame/gameBox/css/zz.css",
+			"file": "css/zz.css",
 			"settings":
 			{
-				"buffer_size": 2954,
+				"buffer_size": 2956,
 				"line_ending": "Windows"
 			}
 		},
@@ -196,7 +196,7 @@
 			}
 		},
 		{
-			"file": "files/css/game/dropcoin/tjb.css",
+			"file": "/D/gitgame/gamewap/files/css/game/dropcoin/tjb.css",
 			"settings":
 			{
 				"buffer_size": 139442,
@@ -572,12 +572,12 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "files/js/game/dropcoin/Engin.js",
+					"file": "/D/gitgame/gamewap/files/js/game/dropcoin/Engin.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -588,8 +588,66 @@
 						"selection":
 						[
 							[
-								60180,
-								58154
+								4828,
+								4828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 990.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								506,
+								506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
 							]
 						],
 						"settings":
@@ -606,66 +664,8 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/D/gitgame/gameBox/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 695,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								575,
-								575
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/gitgame/gameBox/init.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								343,
-								343
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "/D/gitgame/gameBox/main.js",
+					"file": "main.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -689,24 +689,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/D/gitgame/gameBox/css/zz.css",
+					"file": "css/zz.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2954,
+						"buffer_size": 2956,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2881,
-								2881
+								2658,
+								2658
 							]
 						],
 						"settings":
@@ -716,10 +716,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -745,16 +745,16 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
+						"translation.x": 0.0,
 						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "files/css/game/dropcoin/tjb.css",
+					"file": "/D/gitgame/gamewap/files/css/game/dropcoin/tjb.css",
 					"semi_transient": false,
 					"settings":
 					{
@@ -825,7 +825,7 @@
 		"height": 94.0
 	},
 	"pinned_build_system": "",
-	"project": "dropcoinP.sublime-project",
+	"project": "BoxZz.sublime-project",
 	"replace":
 	{
 		"height": 56.0
@@ -852,7 +852,7 @@
 		[
 			[
 				"",
-				"D:\\gitgame\\gamewap\\dropcoinP.sublime-workspace"
+				"D:\\gitgame\\gameBox\\BoxZz.sublime-project"
 			]
 		],
 		"width": 380.0
