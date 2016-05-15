@@ -1,0 +1,18 @@
+mongoDB
+express(nodejs)
+angularjs
+nodejs
+
+GoogleV8
+文件系统
+网络功能（HTTP／TCP／UDP／DNS/TLS/SSL）
+二进制数据
+
+
+
+
+1.创建虚拟服务器
+ a.安装虚拟软件ＶirtualBox.
+ b.在VirtualBox中安装CentOS 7. 
+ c.配置webServer.
+ 
