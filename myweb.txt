@@ -16,3 +16,108 @@ GoogleV8
  b.在VirtualBox中安装CentOS 7. 
  c.配置webServer.
  
+ i.学习CentOS7
+
+  2 使用表态ＩＰ地址配置网络
+    #ip addr show
+    #vi /etc/sysconifg/network-scripts/ifcfg-enp0s3
+    TYPE=Ethernet
+    BOOTPROTO=none
+    DEFROUTE=yes
+    IPV4_FAILURE_FATAL=no
+    IPV6INIT=yes
+    IPV6_AUTOCONF=yes
+    IPV6_DEFROUTE=yes
+    IPV6_FAILURE_FATAL=no
+    NAME=enp0s3
+    UUID='---'
+    DEVICE=enp0s3
+    ONBOOT=yes
+    IPADDR=192.168.1.x
+    PREFIX=24
+    GATEWAY=192.168.1.1
+    DNS1=x.x.x.x
+    DNS2=x.x.x.x
+    IPV6_PEERDNS=yes
+    IPV6_PEERROUTES=yes
+    IPV6_PRIVACY=no
+
+    :wq!
+    #service network restart
+    #ip addr show
+    #ping baidu.com
+
+  3 设置服务器的主机名称
+    #echo $HOSTNAME
+    #vi /etc/hostname
+    myserver
+    :wq!
+
+  4 更新或升级最小化安装的ＣentOS
+    #yum update && yum upgrade
+    
+  5 安装命令行Web浏览器
+    #yum install links
+
+  6 安装Ａpache HTTP服务器
+    #yum install httpd
+    vi /etc/httpd/conf/httpd.conf
+    修改端口号
+    LISTEN 80
+    # firewall-cmd -add-service=http
+    # firewall-cmd -permanent -add-port=3221/tcp
+    # firewall-cmd -reload
+    # systemctl restart httpd.service
+    # systemctl start httpd.service
+    # systemctl enable htpd.service
+    # links 127.0.0.1
+
+
+  7 安装PHP
+  8 安装MariaDB数据库
+  9 安装并配置SSH服务器
+    # SSH -V
+    加强安全
+    #vi /ect/ssh/ssh_config
+    #protocol ->Protocol 2
+    取消ssh中的root login,只允许通过普通用户账号登录后才能使用su切换到root
+    #vi /ect/ssh/sshd_config
+    #PermitRootLogin yes->PermitRootLogin no
+    # systemctl restart sshd.service
+
+
+  10 安装GCC(GNU编译集)
+     # yum install gcc
+     # gcc --version
+
+  11 安装Java
+  12 安装Apache Tomcat
+  13 安装Nmap检查开放端口
+     #yum install nmap
+     #namp 127.0.0.1
+     //列出所有端口
+     #firewall-cmd -list-ports
+  14 配置防火啬
+  15 安装Wget
+  16 安装Telnet
+  17 安装Ｗebmin
+     //Webmin是基于Web的Linux配置工具。它像一个中央系统，用于配置各种系统设置，比如用户＼磁盘分配＼服务以及HTTP服务器＼Apache\MySQL等的配置。
+     ＃wget http://prdownloads.sourceforge.net/webadmin/webmin-1.740-1.noarch.rpm
+     #rpm -ivh webmin-*.rpm
+
+  18 启用第三方库
+  19 安装7-zip工具
+  20 安装NTFS-3G驱动
+  21 安装Ｖsftpd FTP服务器
+  22 安装和配置sudo
+     //sudo通常被称为super do 或者suitable user do,是一个类UNIX操作系统中用其它用户的安全权限执行程序的软件。
+     ＃vi /etc/sudoers
+     
+  23 安装并启用SELinux
+  24 安装Rootkit Hunter
+  25 安装Linux Malware Detect(LMD)
+  26 用Speedtest-cli测试服务器带宽
+  27 配置Cron作业
+  28 安装Owncloud
+  29 启用VirtualBox虚拟化
+  30 用密码保护GRUB
