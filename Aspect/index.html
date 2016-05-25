@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>zuzu</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <script src="libs/zepto-1.1.6.js"></script>
+    <script src="libs/createjs-2015.11.26.min.js"></script>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        #myView {
+            width: 480px;
+            height: 800px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+	<div id="myView"></div>
+    <script src="engin.js"></script>
+	<script>
+        zz.runEngin();
+    </script>
+</body>
+</html>
