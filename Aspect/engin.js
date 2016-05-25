@@ -5,24 +5,10 @@
 this.zz = this.zz||{};
 
 zz.runEngin=function(){
-	var isRunning = false;
-	if(isRunning) return;
-	isRunning = true;
-	console.log("gameStart!");
-	this.stage($('#myView'));
-	this.Main();
+	
 };
 
-zz.Main=function(){
-	/**
-	*加载进度界面
-	*/
-	this.loadingView = new zz.LoadingUI();
-	// initialize the Resource loading library
-    //初始化Resource资源加载库
-	// this.loadingView.addEventListener("event")
-	this.createScene();
-};
+
 // add
 zz.createScene=function(){
 	/**
@@ -305,32 +291,7 @@ zz.bitMap=function(_rX,_rY,_x,_y,_w,_h,_a){
 	s.y = _y;
 	return s;
 }
-zz.stage =function(_$div){
-	this.$canvas = document.createElement("canvas");
-	this.$canvas.width = _$div.width();
-	this.$canvas.height = _$div.height();
-	var context = this.$canvas.getContext("2d");
-	_$div.append(this.$canvas);
-	var site = new createjs.Stage(this.$canvas);
-	createjs.Ticker.setFPS(60);
-	createjs.Ticker.addEventListener("tick", site);
-	createjs.Ticker.userRAF = true;
-	createjs.Touch.enable(site);
-	site.mouseMoveOutside = true;
-	
-	this.loadingView = new createjs.Container();
-	this.stage = new createjs.Container();
-	this.stage.width = this.$canvas.width;
-	this.stage.height = this.$canvas.height;
-	
-	var s=new createjs.Shape();	
-	s.graphics.beginFill("#ff00ff").drawRect(0,0,this.stage.width,this.stage.height);
-	s.x = 0;
-	s.y = 0;
-	s.alpha=.2;
 
-	site.addChild(s,this.loadingView,this.stage);
-}
 
 zz.LoadingUI=function(){
 	
