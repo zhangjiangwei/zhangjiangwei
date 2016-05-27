@@ -21,17 +21,47 @@
             height: 100%;
         }
         #myView {
-            width: 480px;
-            height: 800px;
+            width: 4.8rem;
+            height: 8.0rem;
             background-color: black;
         }
+        canvas{
+        	width: 4.8rem;
+        	height: 8.0rem;
+        }
     </style>
+    <script>
+	(function(pageWidth){
+		pageWidth = pageWidth || 750;
+		var init = function(){
+			var w = $('html').width();
+			w = w > pageWidth ? pageWidth: w;
+			w = w / pageWidth;
+			w = w * 100;
+			$('html').css({
+				fontSize: w
+			});
+			console.log("down")
+		}
+		init();
+		var f;
+		if(typeof f === 'function'){
+			$(window).off('resize', f);
+		};
+		var t;
+		f= function(){
+			clearTimeout(t);
+			t = setTimeout(init, 25);
+		}
+		$(window).on('resize', f);
+	})(480);
+    </script>
 </head>
 <body>
 	<div id="myView"></div>
-    <script src="../test/zz.js"></script>
+    <script src="./js/zz.js"></script>
 	<script>
-        zz.run();
+    zz.run();
     </script>
 </body>
 </html>
