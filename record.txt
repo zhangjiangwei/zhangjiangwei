@@ -4,3 +4,9 @@ npm install gulp
 
 npm install gulp-concat
 查看gulp中文网使用API
+
+->windos
+MSConfig设置启动项
+
+->nodejs
+http://www.runoob.com/nodejs/nodejs-http-server.html
