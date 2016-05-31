@@ -10,3 +10,20 @@ MSConfig设置启动项
 
 ->nodejs
 http://www.runoob.com/nodejs/nodejs-http-server.html
+
+->git 
+
+删除远程分支
+git branch -r -d origin/branch-name
+不成功，只删除本地对该远程分支的track
+正确的
+git push origin :branch-name
+
+推送本地分支到远程
+git push origin branch-name
+
+拉取远程分支到本地
+git checkout origin
+
+
+->game 游戏名称寻路者

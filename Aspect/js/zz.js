@@ -18,8 +18,50 @@ zz.main=function(){
 	// initialize the Resource loading library
     //初始化Resource资源加载库
 	// this.loadingView.addEventListener("event")
-	// this.createScene();
+	this.createScene();
 };
+
+this.zz =this.zz||{};
+zz.createScene=function(){
+	var self = this;
+	var mapUI = {};
+	mapUI.width = 10;
+	mapUI.height = 10;
+	var bitMap=function(_rX,_rY,_x,_y,_w,_h,_a){
+		_rX = _rX||0;
+		_rY = _rY||0;
+		_x = _x ||0;
+		_y = _y ||0;
+		_w = _w || 100;
+		_h = _h || 100;
+		_a = _a || 1;
+		var s=new createjs.Shape();
+		s.graphics.setStrokeStyle(3);
+	 	s.graphics.beginStroke("#ffffff");
+		s.graphics.beginFill("#ff00ff").drawRect(_rX,_rY,_w,_h);
+		s.alpha = _a;
+		s.x = _x;
+		s.y = _y;
+		return s;
+	};
+	posHandler=function(e){
+		console.log(e.target.name);
+	};
+	for(var i=0;i<48;i++){
+		for(var j=0;j<40;j++){
+			var _name = i+"_"+j;
+			// mapUI.arr.push(_name);
+			mapUI.ui = new bitMap(0,0,0,0,mapUI.width,mapUI.height,0.3);
+			mapUI.ui.x = i * mapUI.width;
+			mapUI.ui.y = j * mapUI.height;
+			mapUI.ui.name = _name;
+			mapUI.ui.addEventListener('click',posHandler);
+			self.view.addChild(mapUI.ui);
+		}
+	}
+	
+};
+
 this.zz = this.zz||{};
 zz.engin=function(){
 	var self = this;
@@ -85,6 +127,12 @@ zz.loading=function(){
 	imageContainer.x = 0;
 	imageContainer.y = 0;
 
+	var imageBg = new createjs.Shape();
+	imageBg.graphics.beginFill("#990066");
+	imageBg.graphics.drawRect(0,0,self.width,self.height);
+	imageBg.graphics.endFill();
+	imageContainer.addChild(imageBg);
+
 	loaderWidth = 480;
 
 	barBg = new createjs.Shape();
@@ -102,7 +150,7 @@ zz.loading=function(){
 	var loadNum = 0;
 	text.text = loadtxt+loadNum+"%";
 
-	this.loadView.addChild(loaderBar,text);
+	this.loadView.addChild(imageContainer,loaderBar,text);
 	var _w=0
 	var go_f = setInterval(function(){
 		loadNum++;
@@ -115,7 +163,7 @@ zz.loading=function(){
 			self.loadView.visible = false;
 			self.engin();
 		}
-	},30)
+	},12)
 }
 
 zz.createStage=function(){
