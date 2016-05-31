@@ -44,8 +44,15 @@ zz.createScene=function(){
 		s.y = _y;
 		return s;
 	};
+	var mapId = 0;
+
 	posHandler=function(e){
 		console.log(e.target.name);
+		mapId ++;
+		if(mapId==1){
+			this.Astar.setPos(arr);
+		}
+
 	};
 	for(var i=0;i<48;i++){
 		for(var j=0;j<40;j++){
@@ -70,7 +77,7 @@ zz.engin=function(){
 	var padding = 4;
 	var width = this.width-padding;
 	var height = this.height/2-4
-	var e_color = "#990066"
+	var e_color = "#336699"
 	var e = new createjs.Shape();
 	e.graphics.setStrokeStyle(1);
 	e.graphics.beginStroke(e_color);
@@ -79,18 +86,18 @@ zz.engin=function(){
 	e.graphics.endFill();
 	e.x = padding/2;e.y = padding/2;
 	eg.addChild(e);
-
+	//小圆点
 	var radius = 10;
-	var g_color = "#aa0088";
+	var g_color = "#aaff00";
 	var g = new createjs.Shape();
 	g.graphics.setStrokeStyle(1);
 	g.graphics.beginStroke(g_color);
 	g.graphics.beginFill(g_color);
 	g.graphics.drawCircle(0,0,radius);
 	g.graphics.endFill();
-	g.x = height+padding;
-	g.y = 100;
-
+	g.x = 0;
+	g.y = 0;
+	this.ng = g;
 	eg.addChild(g);
 
 	self.view.addChild(eg);

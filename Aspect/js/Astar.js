@@ -11,8 +11,13 @@ zz.Astar=function(){
 	var gw = 10;
 	var gh = 10;
 	var gwh = 14;
+	//设置开始点;
+	var p_start=new Array(2)
+	//设置结束点;
+	var p_end=new Array(2);
 
-	var s_path,n_path="";
+	var p_path="";
+	var n_path="";
 
 	var num,bg,
 	//设置标志，表示起点，终点，障碍物
@@ -32,4 +37,19 @@ zz.Astar=function(){
 	  a[7]=pos[0]+","+(pos[1]-1);
 	  return a;
 	}
+
+	this.setPos(id,arr){
+		switch(id){
+			case 1:
+			    p_start=arr;
+			    break;
+			case 2:
+			    p_end=arr;
+			    break;
+			case 3:
+			    n_path+=arr.join(",")+";";
+			    break;
+			default:
+				break;
+		}
 }
