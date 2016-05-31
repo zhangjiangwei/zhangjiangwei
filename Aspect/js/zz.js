@@ -22,14 +22,44 @@ zz.main=function(){
 };
 this.zz = this.zz||{};
 zz.engin=function(){
+	var self = this;
+	var eg = new createjs.Container();
+
+	var padding = 4;
+	var width = this.width-padding;
+	var height = this.height/2-4
+	var e_color = "#990066"
+	var e = new createjs.Shape();
+	e.graphics.setStrokeStyle(1);
+	e.graphics.beginStroke(e_color);
+
+	e.graphics.drawRect(0,0,width,height);
+	e.graphics.endFill();
+	e.x = padding/2;e.y = padding/2;
+	eg.addChild(e);
+
+	var radius = 10;
+	var g_color = "#aa0088";
+	var g = new createjs.Shape();
+	g.graphics.setStrokeStyle(1);
+	g.graphics.beginStroke(g_color);
+	g.graphics.beginFill(g_color);
+	g.graphics.drawCircle(0,0,radius);
+	g.graphics.endFill();
+	g.x = height+padding;
+	g.y = 100;
+
+	eg.addChild(g);
+
+	self.view.addChild(eg);
 	this.init=function(){
-		
+
 	}
 }
 
 this.zz = this.zz||{};
 zz.loading=function(){
-
+	var self = this;
 	var bar;
 	var barBg;
 	var loaderBar;
@@ -82,10 +112,10 @@ zz.loading=function(){
 		text.text = loadtxt+loadNum+"%";
 		if(loadNum>=100){
 			clearInterval(go_f);
-			zz.loadView.visible = false;
-			zz.engin.init();
+			self.loadView.visible = false;
+			self.engin();
 		}
-	},60)
+	},30)
 }
 
 zz.createStage=function(){
