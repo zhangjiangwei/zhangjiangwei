@@ -45,12 +45,13 @@ zz.createScene=function(){
 		return s;
 	};
 	var mapId = 0;
-
+	mapUI.pos=new self.Astar();
 	posHandler=function(e){
 		console.log(e.target.name);
 		mapId ++;
 		if(mapId==1){
-			this.Astar.setPos(arr);
+			var arr = [20,30]
+			mapUI.pos.setPos(arr);
 		}
 
 	};

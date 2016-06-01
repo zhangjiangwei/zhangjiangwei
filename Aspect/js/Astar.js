@@ -1,6 +1,7 @@
 /**地图搜索Astar
 *zhangjiangwei@h5zz.com
 */
+this.zz=this.zz||{};
 zz.Astar=function(){
 
 	//定义打开列表和关闭列表用于判断搜索存储
@@ -19,7 +20,7 @@ zz.Astar=function(){
 	var p_path="";
 	var n_path="";
 
-	var num,bg,
+	var num,bg;
 	//设置标志，表示起点，终点，障碍物
 	var flag=0;
 
@@ -38,7 +39,7 @@ zz.Astar=function(){
 	  return a;
 	}
 
-	this.setPos(id,arr){
+	this.setPos=function(id,arr){
 		switch(id){
 			case 1:
 			    p_start=arr;
@@ -52,4 +53,5 @@ zz.Astar=function(){
 			default:
 				break;
 		}
+	}
 }

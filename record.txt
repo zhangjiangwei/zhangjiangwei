@@ -25,5 +25,5 @@ git push origin branch-name
 拉取远程分支到本地
 git checkout origin
 
-
+git pull
 ->game 游戏名称寻路者
