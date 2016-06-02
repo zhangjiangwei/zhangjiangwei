@@ -22,11 +22,13 @@ zz.main=function(){
 };
 
 this.zz =this.zz||{};
+zz.mapUI = function(){
+
+};
 zz.createScene=function(){
 	var self = this;
-	var mapUI = {};
-	mapUI.width = 10;
-	mapUI.height = 10;
+	var _width = 10;
+	var _height = 10;
 	var bitMap=function(_rX,_rY,_x,_y,_w,_h,_a){
 		_rX = _rX||0;
 		_rY = _rY||0;
@@ -45,26 +47,41 @@ zz.createScene=function(){
 		return s;
 	};
 	var mapId = 0;
+<<<<<<< HEAD
 	mapUI.pos=new self.Astar();
+=======
+	self.mapUI.pos = new self.Astar();
+
+>>>>>>> dev
 	posHandler=function(e){
-		console.log(e.target.name);
 		mapId ++;
+		console.log(mapId);
+		if(mapId>=3){
+			mapId=0;
+		}
+		var arr = (e.target.name).split('_');
+		self.mapUI.pos = new self.Astar()
 		if(mapId==1){
+<<<<<<< HEAD
 			var arr = [20,30]
 			mapUI.pos.setPos(arr);
+=======
+			self.mapUI.pos.setPos(mapId,arr);
+		}else if(mapId==2){
+			self.mapUI.pos.setPos(mapId,arr);
+>>>>>>> dev
 		}
-
 	};
 	for(var i=0;i<48;i++){
 		for(var j=0;j<40;j++){
 			var _name = i+"_"+j;
-			// mapUI.arr.push(_name);
-			mapUI.ui = new bitMap(0,0,0,0,mapUI.width,mapUI.height,0.3);
-			mapUI.ui.x = i * mapUI.width;
-			mapUI.ui.y = j * mapUI.height;
-			mapUI.ui.name = _name;
-			mapUI.ui.addEventListener('click',posHandler);
-			self.view.addChild(mapUI.ui);
+			// self.mapUI.arr.push(_name);
+			self.mapUI.ui = new bitMap(0,0,0,0,_width,_height,0.3);
+			self.mapUI.ui.x = i * _width;
+			self.mapUI.ui.y = j * _height;
+			self.mapUI.ui.name = _name;
+			self.mapUI.ui.addEventListener('click',posHandler);
+			self.view.addChild(self.mapUI.ui);
 		}
 	}
 	
@@ -100,7 +117,6 @@ zz.engin=function(){
 	g.y = 0;
 	this.ng = g;
 	eg.addChild(g);
-
 	self.view.addChild(eg);
 	this.init=function(){
 
@@ -171,7 +187,7 @@ zz.loading=function(){
 			self.loadView.visible = false;
 			self.engin();
 		}
-	},12)
+	},10)
 }
 
 zz.createStage=function(){

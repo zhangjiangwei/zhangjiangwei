@@ -3,7 +3,6 @@
 */
 this.zz=this.zz||{};
 zz.Astar=function(){
-
 	//定义打开列表和关闭列表用于判断搜索存储
 	var openlist=new Array();
 	var closelist=new Array();
@@ -38,20 +37,45 @@ zz.Astar=function(){
 	  a[7]=pos[0]+","+(pos[1]-1);
 	  return a;
 	}
+<<<<<<< HEAD
 
 	this.setPos=function(id,arr){
+=======
+	var arr2;
+	this.setPos=function(id,arr){
+		console.log(arr);
+		if(arr == arr2) {
+			console.log("已经存储")
+			return;
+		}else{
+			arr2 = arr;
+		}
+>>>>>>> dev
 		switch(id){
 			case 1:
 			    p_start=arr;
+			    console.log("p_start:"+p_start);
 			    break;
 			case 2:
 			    p_end=arr;
+			    console.log("p_end:"+p_end);
 			    break;
 			case 3:
 			    n_path+=arr.join(",")+";";
 			    break;
+			case 4:
+				setPos();
+				break;
 			default:
 				break;
 		}
+<<<<<<< HEAD
 	}
+=======
+	};
+	function setPos(){
+	  var h=(Math.abs(p_end[0]-p_start[0])+Math.abs(p_end[1]-p_start[1]))*gw;
+	  s_path=[h,0,h,p_start,p_start];
+	};
+>>>>>>> dev
 }
