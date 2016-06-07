@@ -1,0 +1,64 @@
+/*游戏页面*/
+.mainzz{
+    position: relative;
+    // max-width: 900px;
+    margin: 0 auto;
+    height: 12rem;
+    background-color: white;
+}
+.mainCanvas canvas{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+}
+.mainBox{
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    background-color: #eeeeee;   
+}
+.mainBar{
+    width: 100%;
+    height: 0.1rem;
+    background: #cc0000;
+}
+.mainState{
+    height:0.35rem;
+    margin: 0.1rem 0;
+    background-color: #221100;
+}
+.mainStatelogo{
+    text-align: center;
+    font-family: '8Pin Matrix';
+    font-weight: bolder;
+    font-size: 0.35rem;
+    width: 1rem;
+    line-height: 0.35rem;
+    color: #cc0000;
+}
+.mainCanvas{
+    margin: 0.3rem auto;
+    width: 8rem;
+    height: 8rem;
+    background-color: #232121;
+}
+.mainNavigation{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #a30000;
+}
+.mainConsole{
+    width: 100%;
+}
+.mainConsole p{
+    display: block;
+    line-height: 0.24rem;
+    font-size: 0.12rem;
+    color: #999;
+    text-align: center;
+    width: 100%;
+    font: 0.12rem/1.5 "\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53" !important;
+}
+.mainConsole .big{
+    height: 2rem;
+}
